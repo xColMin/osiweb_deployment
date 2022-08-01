@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}
+{% load static %}
+    {% block body_block %}
+        <h1>Welcome to Osiweb</h1>
+
+            <div class="jumbotron">
+                <h1>Log in: </h1>
+                <form action="{% url 'user_aut:user_login' %}" method="post">
+                    {% csrf_token %}
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" placeholder="Enter Username">
+
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" placeholder="Enter Password">
+
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+
+    {% endblock %}

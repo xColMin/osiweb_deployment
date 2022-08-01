@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+    {% block body_block %}
+        <h1>Massive Creation</h1>
+        <h3>Upload Files</h3>
+
+          <form action="{% url 'massive_creation:upload' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+              <ul>
+                  <li>Plantilla</li>
+                  <li>Export</li>
+              </ul>
+
+            {{ form.as_p }}
+              <button type="submit">Run</button>
+          </form>
+
+    {% endblock %}

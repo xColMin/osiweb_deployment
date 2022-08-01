@@ -1,0 +1,40 @@
+{% extends 'base/base.html' %}
+    {% block body_block %}
+        <h1>Osiviewer: New Columns</h1>
+
+          <form action="{% url 'osiviewer:run' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+              <button type="submit">Run</button>
+          </form>
+
+
+ <table class="table table-sm table-striped">
+                <thead>
+                  <tr>
+                    <th>Building</th>
+                    <th>METER NAME</th>
+                    <th>Meter</th>
+                    <th>Floor</th>
+                    <th>Flat</th>
+                      <th>Meter ID</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <!-- jinja2 Technique -->
+                {% if d %}
+                {% for i in d %}
+                  <tr>
+                    <td><div contenteditable="true">{{i.Building}}</div></td>
+                    <td>{{i.METER_NAME}}</td>
+                    <td><div contenteditable="true">{{i.Meter}}</div></td>
+                    <td><div contenteditable="true">{{i.Floor}}</div></td>
+                    <td><div contenteditable="true">{{i.Flat}}</div></td>
+                      <td>{{i.Meter_ID}}</td>
+                  </tr>
+                {% endfor %}
+                {% endif %}
+                </tbody>
+              </table>
+
+
+    {% endblock %}

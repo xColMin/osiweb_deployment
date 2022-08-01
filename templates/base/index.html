@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+{% load static %}
+    {% block body_block %}
+        <h1>Welcome to Osiweb</h1>
+
+        {% csrf_token %}
+
+        <nav class="navbar navbar-light bg-light">
+            <div class="navbar-nav">
+                <li><a class="nav-item nav-link" href="{% url 'massive_creation:upload' %}">Massive Creation</a></li>
+                <li><a class="nav-item nav-link" href="{% url 'consumer_care:upload' %}">Consumer Care</a></li>
+                <li><a class="nav-item nav-link" href="{% url 'osiviewer:upload' %}">Osiviewer</a></li>
+            </div>
+        </nav>
+
+    {% endblock %}

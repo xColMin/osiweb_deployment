@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+    {% block body_block %}
+        <h1>Consumer Care</h1>
+        <h3>Upload Files</h3>
+
+          <form action="{% url 'consumer_care:upload' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+              <ul>
+                  <li>Files in Export</li>
+              </ul>
+
+            {{ form.as_p }}
+              <button type="submit">Run</button>
+          </form>
+
+    {% endblock %}
