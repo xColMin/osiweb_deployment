@@ -19,7 +19,6 @@ colorama==0.4.3
 crcmod==1.7
 cryptography==2.8
 cycler==0.11.0
-dblatex===0.3.11py3
 dbus-python==1.2.16
 defer==1.0.6
 distlib==0.3.0
