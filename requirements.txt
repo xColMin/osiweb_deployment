@@ -19,7 +19,6 @@ colorama==0.4.3
 crcmod==1.7
 cryptography==2.8
 cycler==0.11.0
-dbus-python==1.2.16
 distlib==0.3.0
 distro==1.4.0
 Django==4.0.4
