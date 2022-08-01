@@ -102,7 +102,6 @@ ssh-import-id==5.10
 systemd-python==234
 texttable==1.6.2
 threadpoolctl==3.1.0
-ufw==0.36
 unattended-upgrades==0.1
 uploads==0.8
 urllib3==1.25.8
