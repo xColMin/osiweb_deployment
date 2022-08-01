@@ -18,7 +18,6 @@ click==7.1.2
 colorama==0.4.3
 crcmod==1.7
 cryptography==2.8
-cupshelpers==1.0
 cycler==0.11.0
 dblatex===0.3.11py3
 dbus-python==1.2.16
