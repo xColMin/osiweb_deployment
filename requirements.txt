@@ -5,7 +5,6 @@ asciinema==2.0.2
 asciitree==0.3.3
 asgiref==3.5.2
 attrs==19.3.0
-backports.zoneinfo==0.2.1
 bcrypt==3.1.7
 beautifulsoup4==4.8.2
 blinker==1.4
